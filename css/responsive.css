@@ -1,11 +1,26 @@
 @media screen and (min-width: 480px) {
-  body {
-    background-color: black;
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  #secondary {
+    width: 40%;
+    float: right;
   }
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    background-color: red;
+@media screen and (min-width: 660px) {
+  /*
+  3 X 5% = 15%;
+  100% - 15% = 85;
+  85 / 3 = 28.3333%;
+  */
+
+  #gallery li {
+    width: 28.3333%;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear: left;
   }
 }
